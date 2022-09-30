@@ -1,0 +1,160 @@
+.cardContainer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,.7);
+    margin: 1rem;
+    box-shadow: 1px 5px 25px 10px rgba(0,0,0,.4);
+    transition: .5s;
+    flex-direction: column;
+}
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cardImg {
+    display: flex;
+    width: 120px;
+}
+.cardContainer:hover {
+    display: flex;
+    background-color: rgba(0,0,0,.75);
+    box-shadow: 1px 3px 25px 13px rgba(0,0,0,.5);
+}
+.cardTitle {
+    display: flex;
+    font-size: 3rem;
+    color: #fff;
+}
+.cardTemp {
+    display: flex;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: .3rem;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.weatherType {
+    display: flex;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+@media screen and (max-width: 1200px) {
+    .cardContainer {
+        width: 550px;
+        height: 270px;
+    }
+    .cardImg {
+        width: 115px;
+    }
+    .cardTemp {
+        font-size: 9rem;
+    }
+    .cardTitle {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .cardContainer {
+        width: 450px;
+        height: 210px;
+    }
+    .cardImg {
+        width: 110px;
+    }
+    .cardTemp {
+        font-size: 8rem;
+    }
+    .cardTitle {
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cardContainer {
+        width: 370px;
+        height: 190px;
+    }
+    .cardImg {
+        width: 105px;
+    }
+    .cardTemp {
+        font-size: 7rem;
+    }
+    .cardTitle {
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cardContainer {
+        width: 270px;
+        height: 140px;
+    }
+    .cardImg {
+        width: 100px;
+    }
+    .cardTemp {
+        font-size: 6rem;
+    }
+    .cardTitle {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .cardContainer {
+        width: 230px;
+        height: 130px;
+    }
+    .cardImg {
+        width: 95px;
+    }
+    .cardTemp {
+        font-size: 5rem;
+    }
+    .cardTitle {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 290px) {
+    .cardContainer {
+        width: 200px;
+        height: 125px;
+    }
+    .cardImg {
+        width: 95px;
+    }
+    .cardTemp {
+        font-size: 5rem;
+    }
+    .cardTitle {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 250px) {
+    .cardContainer {
+        width: 190px;
+        height: 120px;
+    }
+    .cardImg {
+        width: 90px;
+    }
+    .cardTemp {
+        font-size: 4rem;
+    }
+    .cardTitle {
+        font-size: 1.8rem;
+    }
+}
