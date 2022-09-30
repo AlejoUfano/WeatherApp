@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SearchIcon from '@material-ui/icons/Search';
+import { BsSearch } from 'react-icons/bs'
 import './navBar.css'
 
 const NavBar = ({ getCity }) => {
@@ -24,7 +24,7 @@ const NavBar = ({ getCity }) => {
             onChange={(e)=>handleChange(e)}
             className='inputContainer'
             />            
-            <button type='submit' className='searchButton'><SearchIcon style={{ fill: '#fff' }} className='searchIcon' /></button>
+            <button type='submit' className='searchButton'><BsSearch style={{ fill: '#fff' }} className='searchIcon' /></button>
         </form>
     </div>
   )
