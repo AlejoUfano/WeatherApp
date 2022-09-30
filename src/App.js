@@ -10,7 +10,7 @@ function App() {
     try {
       let data = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
       if(cities.filter(c=>c.id===data.data.id).length){
-        return alert(`${data.data.name} city is already loaded`)
+        return alert(`${data.data.name} is already loaded`)
       } else {
         setCities([data.data])
       } 
