@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #fff;
 }
 .extraCardContainer:hover {
     background-color: rgba(0,0,0,.75);
