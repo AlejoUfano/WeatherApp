@@ -1,0 +1,53 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.formContainer {
+    margin-top: 2rem;
+    display: flex;
+    outline: transparent;
+    border: none;
+}
+.inputContainer {
+    background: #7c7c7c5b;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-right: .3rem;
+    color: #fff;
+    transition: .3s;
+}
+.inputContainer::placeholder{
+    color: white;
+    opacity: .7;
+}
+.inputContainer:focus {
+    border: none;
+    outline: none;
+}
+.inputContainer:hover {
+    color: #fff;
+    background: #7c7c7c8b;
+}
+.searchButton {
+    border: none;
+    outline: none;
+    display: flex;
+    border-radius: 50%;
+    width: 3rem ;   
+    background: #7c7c7c6b;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.searchButton:hover {
+    background: #7c7c7c8b;
+}
+.searchIcon {                                                       
+    display: flex;
+    align-self: center;
+}
