@@ -1,0 +1,99 @@
+.extraCardContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 1px 5px 25px 10px rgba(0,0,0,.4);
+    transition: .5s;
+    margin-top: 3rem;
+    width: 500px;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.extraCardContainer:hover {
+    background-color: rgba(0,0,0,.75);
+    box-shadow: 1px 3px 25px 13px rgba(0,0,0,.5);
+}
+.extraInfoContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.infoData {
+    font-size: 2rem;
+    font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+    .extraCardContainer {
+        width: 450px;
+        height: 105px;
+    }
+    .extraInfoContainer {
+       font-size: 1.4rem; 
+    }
+    .infoData {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .extraCardContainer {
+        width: 400px;
+        height: 100px;
+        margin-top: 2.5rem;
+    }
+    .extraInfoContainer {
+        font-size: 1.3rem; 
+     }
+     .infoData {
+         font-size: 1.6rem;
+     }
+}
+@media screen and (max-width: 700px) {
+    .extraCardContainer {
+        width: 370px;
+        height: 95px;
+        margin-top: 2rem;
+    }
+    .extraInfoContainer {
+        font-size: 1.2rem; 
+     }
+     .infoData {
+         font-size: 1.5rem;
+     }
+}
+@media screen and (max-width: 500px) {
+    .extraCardContainer {
+        width: 130px;
+        height: 210px;
+        margin-top: 1.5rem;
+        flex-direction: column;
+    }
+    .extraInfoContainer {
+        font-size: 1.1rem; 
+        margin: .7rem;
+     }
+     .infoData {
+         font-size: 1.4rem;
+     }
+}
+@media screen and (max-width: 300px) {
+    .extraCardContainer {
+        width: 120px;
+        height: 190px;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .extraInfoContainer {
+        font-size: 1rem; 
+        margin: .5rem;
+     }
+     .infoData {
+         font-size: 1.3rem;
+     }
+}
