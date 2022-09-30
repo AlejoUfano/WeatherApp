@@ -1,13 +1,17 @@
 import React from 'react'
 import './card.css'
 
-const Card = ({ city, onClose }) => {
+const Card = ({ city }) => {
   return (
     <div className='cardContainer'>
-        <button onClick={()=>onClose(city.id)}>X</button>
-        <div className="cardTitle">{city.name}</div>
-        <div className="cardTemp">{city.main.temp}</div>
-        <img src={`https://openweathermap.org/img/wn/${city.weather.icon}.png`} alt="icon" className="cardImg" />
+        <div className='cardTitle'>{city.name}</div>      
+        <div className='infoContainer'>
+          <div className='cardTemp'>{city.main.temp.toString().split('.')[0]}°</div>        
+          <div className='weatherInfo'>
+            <img src={`https://openweathermap.org/img/wn/${city.weather[0].icon}.png`} alt='icon' className='cardImg' />
+            <div className='weatherType'>{city.weather[0].main}</div>
+          </div>
+        </div>
     </div>
   )
 }
